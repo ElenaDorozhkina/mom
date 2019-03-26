@@ -1,0 +1,30 @@
+.about-me {
+	margin: 120 px auto;
+	display: flex;
+	align-items: center;
+}
+.about-me_img {
+	flex-basis: 43%;
+	margin-right: 95px;
+	position: relative;
+}
+.about-me_text {
+	flex-basis: calc (100% - 43% - 95px);
+}
+.about-me_text p {
+	font-size: 18px;
+	line-height: 30px;
+	margin: 25px 0;
+	color: black;
+}
+}
+.about-me_rext .about-us_title {
+	font-size: 36px;
+	line-height: 42px;
+	margin-top: 0;
+	margin-bottom: 35px;
+	
+}
+.about-me_button {
+	margin-top: 35px;
+}

@@ -1,0 +1,65 @@
+.header {
+	background: url('dog.jpg')center no-repeat;
+	background-size: cover;
+	margin-bottom: 120px;
+	position: relative;	
+}
+.header::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.header_wrap {
+	height:70vh;
+}
+.header_top {
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	padding: 40px 0;
+}
+.header_logo p {
+	color:white;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 700;
+}
+.header h1 {
+	text-align: center;
+	font-size: 54px;
+	line-height: 60px;
+	color: #FFF0F5;
+	width: 100%;
+	position: absolute;
+	padding: 0 15px;
+	box-sizing: border-box;
+	
+}
+@media (max-width: 980px){
+	.header{
+		margin-bottom: 60px;
+	}
+}
+@media (max-width: 768){
+	.header{
+		font-size: 34px;
+		line-height: 40px;
+	}
+}
+@media (max-height: 480){
+	.header_wrap{
+		height: auto;
+	}
+	.header h1 {
+		position: static;
+		left:auto;
+		top: auto;
+		transform: translate(0,0);
+		padding-top: 24px;
+		page-bottom: 150px;
+	}
+}
